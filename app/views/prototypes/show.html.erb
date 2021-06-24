@@ -14,7 +14,7 @@
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
       <%end%>
       <div class="prototype__image">
-        <%= image_tag @prototype.image %>
+        <%= image_tag @prototype.image,show.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
       </div>
       <div class="prototype__body">
         <div class="prototype__detail">
