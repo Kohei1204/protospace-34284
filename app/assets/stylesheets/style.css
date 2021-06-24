@@ -179,6 +179,7 @@ a {
 }
 .prototype__image{
   width: 40%;
+  height: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
