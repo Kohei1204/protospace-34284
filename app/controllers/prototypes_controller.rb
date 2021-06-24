@@ -4,7 +4,7 @@ class PrototypesController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
-    @prototypes = Prototype.includes(:user)
+    @prototypes = Prototype.includes(:user).order('created_at DESC ')
   end
 
   def new
